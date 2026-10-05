@@ -6,7 +6,7 @@ public class PalindromeNumbers {
 		int num = 1221;
 		int original=num;
 		int reversenum =0;
-		while (num > 0) {
+		for(;num > 0;) {
 	          int digit = num % 10;
 	          reversenum = reversenum * 10 + digit;
 	          num = num / 10;

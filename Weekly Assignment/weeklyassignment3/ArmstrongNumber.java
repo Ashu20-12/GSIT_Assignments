@@ -6,7 +6,7 @@ public class ArmstrongNumber {
 		int num = 153 ;
 		int actualnum=num;
 		int armsum=0;
-		while(num!=0)
+		for(;num!=0;)
 		{
 			int digit = num%10;			
 			armsum = armsum + digit*digit*digit;
