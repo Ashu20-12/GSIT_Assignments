@@ -81,7 +81,16 @@ public class ArrayList_ProductClass {
 		
 		System.out.println();
 		
-		list.removeIf(p -> p.quantity == 0); // removeIF is a function and the lambda 
+		//list.removeIf(p -> p.quantity == 0); // removeIF is a function and the lambda is the successor
+		for(int i=0 ; i<list.size();i++)
+		{
+			if(list.get(i).quantity== 0)
+			{
+				list.remove(i);  // another way of removing the product whose quantity is 0
+			}
+		}
+
+		
 		System.out.println("Product removed whose quantity is 0");
 		System.out.println();
 		System.out.println("Final Product list : ");
